@@ -5,6 +5,28 @@ using System.Threading.Tasks;
 
 namespace TagHelperDemo.Models
 {
+    public class HomeModel
+    {
+        public Organisation Org1{get;set;}
+
+
+        public List<Organisation> OtherOrgs { get; set; }
+
+        public HomeModel()
+        {
+            Org1 = new Organisation
+            {
+                Name = "Microsoft Corp",
+                StreetAddress = "One Microsoft Way",
+                AddressLocality = "Redmond",
+                AddressRegion = "WA",
+                PostalCode = "98052-6399"
+            };
+
+            OtherOrgs = new List<Organisation> { Organisation.WellKnownCompany };
+        }
+    }
+
     public class Organisation
     {
         public string Name { get; set; }

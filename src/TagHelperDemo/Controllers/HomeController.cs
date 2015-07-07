@@ -11,14 +11,7 @@ namespace TagHelperDemo.Controllers
     {
         public IActionResult Index()
         {
-            var model = new Organisation
-            {
-                Name = "Microsoft Corp",
-                StreetAddress = "One Microsoft Way",
-                AddressLocality = "Redmond",
-                AddressRegion = "WA",
-                PostalCode = "98052-6399"
-            };
+            var model = new HomeModel();
             return View(model);
         }
         

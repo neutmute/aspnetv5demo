@@ -15,6 +15,11 @@ namespace TagHelperDemo.TagHelpers
     {
         public Organisation Organisation { get; set; }
 
+        /// <summary>
+        /// This doesn't get populated
+        /// </summary>
+        public List<Organisation> ManyOrganisations { get; set; }
+
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             var br = new TagBuilder("br").ToString(TagRenderMode.SelfClosing);
