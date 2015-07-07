@@ -1,11 +1,17 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+@model Organisation
 @addTagHelper "*, TagHelperDemo"
 
-The thumbnail tag should transform here:
+We should see cats here:
+<br/>
 
 <thumbnail src="http://lorempixel.com/400/400/cats"
            caption="A random cat picture"
            alt="Cats!">
 </thumbnail>
+
+We should see company details here:
+<br />
+<company organisation="Model"></company>
