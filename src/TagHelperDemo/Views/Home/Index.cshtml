@@ -1,4 +1,11 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-Foobar
+@addTagHelper "*, TagHelperDemo"
+
+The thumbnail tag should transform here:
+
+<thumbnail src="http://lorempixel.com/400/400/cats"
+           caption="A random cat picture"
+           alt="Cats!">
+</thumbnail>
