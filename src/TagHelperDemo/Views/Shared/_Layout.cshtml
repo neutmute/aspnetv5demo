@@ -1,0 +1,16 @@
+﻿@inject IOptions<AppSettings> AppSettings
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>Footer: @AppSettings.Options.SiteTitle</p>
+            </footer>
+        </div>
+
+
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
