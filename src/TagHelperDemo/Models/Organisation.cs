@@ -12,5 +12,20 @@ namespace TagHelperDemo.Models
         public string AddressLocality { get; set; }
         public string AddressRegion { get; set; }
         public string PostalCode { get; set; }
+
+        public static Organisation WellKnownCompany
+        {
+            get
+            {
+                return new Organisation
+                {
+                    Name = "Cyberdyne",
+                    StreetAddress = "18144 El Camino Real",
+                    AddressLocality = "Sunnyvale",
+                    AddressRegion = "WA",
+                    PostalCode = "California"
+                };
+            }
+        }
     }
 }
