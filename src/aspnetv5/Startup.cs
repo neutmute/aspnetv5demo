@@ -21,6 +21,7 @@ using Microsoft.Framework.Logging;
 using Microsoft.Framework.Logging.Console;
 using Microsoft.Framework.Runtime;
 using TagHelperDemo.Models;
+using aspnetv5;
 
 namespace TagHelperDemo
 {
@@ -66,6 +67,8 @@ namespace TagHelperDemo
 
             // Add the console logger.
             loggerfactory.AddConsole(minLevel: LogLevel.Warning);
+
+            NlogConfigurator.Go();
 
             // Add the following to the request pipeline only in development environment.
             if (env.IsEnvironment("Development"))
