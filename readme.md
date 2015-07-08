@@ -1,6 +1,9 @@
-# Experiments in ASP.NET v5 #
+# Experiments in ASP.NET v5 (vNext) #
 
-A lean solution that demonstrates
+A lean web project that demonstrates
 
 - TagHelpers
 - NLog configured via code (haven't got nlog.config conventional location working yet)
+- Common.Logging
+
+ 

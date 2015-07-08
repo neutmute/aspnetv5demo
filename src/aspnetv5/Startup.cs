@@ -69,6 +69,7 @@ namespace TagHelperDemo
             loggerfactory.AddConsole(minLevel: LogLevel.Warning);
 
             NlogConfigurator.Go();
+            CommonLoggingConfigurator.Go();
 
             // Add the following to the request pipeline only in development environment.
             if (env.IsEnvironment("Development"))

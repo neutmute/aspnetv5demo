@@ -25,11 +25,98 @@
       "Microsoft.Framework.Logging >= 1.0.0-beta4",
       "Microsoft.Framework.Logging.Console >= 1.0.0-beta4",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-beta4",
-      "NLog >= 4.0.1"
+      "NLog >= 4.0.1",
+      "Common.Logging.NLog40 >= 3.2.0"
     ],
     "DNX,Version=v4.5.1": []
   },
   "libraries": {
+    "Common.Logging/3.2.0": {
+      "serviceable": false,
+      "sha": "GIzUCdcJg+PDFTdrArFurp0qt8YnFonMShKK60qZXqpPf0T7vjJL0DoDHmNeTCC4GYmY+x2DPDs6ugOfnR63Ng==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {
+            "Common.Logging.Core": "3.2.0"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net40/Common.Logging.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net40/Common.Logging.dll"
+          ]
+        }
+      },
+      "files": [
+        "Common.Logging.3.2.0.nupkg",
+        "Common.Logging.3.2.0.nupkg.sha512",
+        "Common.Logging.nuspec",
+        "lib/net35/Common.Logging.dll",
+        "lib/net35/Common.Logging.pdb",
+        "lib/net35/Common.Logging.xml",
+        "lib/net40/Common.Logging.dll",
+        "lib/net40/Common.Logging.pdb",
+        "lib/net40/Common.Logging.xml"
+      ]
+    },
+    "Common.Logging.Core/3.2.0": {
+      "serviceable": false,
+      "sha": "ZqTxFYLb/5n1RNtt1cxG1e6XRWV25cnlW9nXQdaS6lEERRkLURqSLDUZ9OjORjcD2h+MPEVb2rUJWKJK+HrZIg==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net40/Common.Logging.Core.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net40/Common.Logging.Core.dll"
+          ]
+        }
+      },
+      "files": [
+        "Common.Logging.Core.3.2.0.nupkg",
+        "Common.Logging.Core.3.2.0.nupkg.sha512",
+        "Common.Logging.Core.nuspec",
+        "lib/net35/Common.Logging.Core.dll",
+        "lib/net35/Common.Logging.Core.pdb",
+        "lib/net35/Common.Logging.Core.xml",
+        "lib/net40/Common.Logging.Core.dll",
+        "lib/net40/Common.Logging.Core.pdb",
+        "lib/net40/Common.Logging.Core.xml",
+        "lib/portable-win+net40+sl40+wp7/Common.Logging.Core.dll",
+        "lib/portable-win+net40+sl40+wp7/Common.Logging.Core.pdb",
+        "lib/portable-win+net40+sl40+wp7/Common.Logging.Core.XML"
+      ]
+    },
+    "Common.Logging.NLog40/3.2.0": {
+      "serviceable": false,
+      "sha": "J2TwGIjx5tnRLVm5YnxuSGxIm6HBykgfQhUKLK8z2Xmx1RDCExoOZyWQrTw2RgF8BmfxXtl7EUDPtHD7/i+R3w==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {
+            "Common.Logging": "3.2.0",
+            "NLog": "4.0.0"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net40/Common.Logging.NLog40.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net40/Common.Logging.NLog40.dll"
+          ]
+        }
+      },
+      "files": [
+        "Common.Logging.NLog40.3.2.0.nupkg",
+        "Common.Logging.NLog40.3.2.0.nupkg.sha512",
+        "Common.Logging.NLog40.nuspec",
+        "lib/net40/Common.Logging.NLog40.dll",
+        "lib/net40/Common.Logging.NLog40.pdb",
+        "lib/net40/Common.Logging.NLog40.xml"
+      ]
+    },
     "EntityFramework/7.0.0-beta4": {
       "serviceable": false,
       "sha": "KTplgz4PBKb33t8O0I5S8yBwkU+l9PTymzoTVav8/FGikck55Amf28EOpOZAqnkGIzCGYD5/k26P7AmVyYyTHw==",
