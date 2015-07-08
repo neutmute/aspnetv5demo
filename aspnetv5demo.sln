@@ -8,7 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TagHelperDemo", "src\TagHelperDemo\TagHelperDemo.xproj", "{37DDD854-14D5-4DB6-BF00-7A30113936E2}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "aspnetv5", "src\aspnetv5\aspnetv5.xproj", "{37DDD854-14D5-4DB6-BF00-7A30113936E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,5 +23,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{37DDD854-14D5-4DB6-BF00-7A30113936E2} = {BA7CDB26-BCB3-47A1-87DA-356CD1A5E957}
 	EndGlobalSection
 EndGlobal
