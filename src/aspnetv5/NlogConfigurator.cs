@@ -37,7 +37,8 @@ namespace aspnetv5
             var target =
                 new FileTarget
                 {
-                    FileName = @"D:\downloads\aspnetv5.code.nlog.log"
+                    FileName = @"${specialfolder:folder=Desktop:file=aspnetv5.code.nlog.log}"
+                    , Layout = "${longdate} |${level:uppercase=true:padding=5} | ${identity:authType=false:isAuthenticated=false} | ${message} | ${exception:format=type,tostring}"
                 };
 
             config.AddTarget("logfile", target);

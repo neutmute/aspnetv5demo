@@ -6,9 +6,13 @@
 
 
 <fieldset>
-    <legend>Metadata</legend>
+    <legend>Diagnostics</legend>
 
     Environment: @Model.EnvironmentName
+    <br/>
+    Exception Handling: @Html.ActionLink("Throw an exception", "ThrowException")
+    <br />
+    Logs: See desktop
 </fieldset>
 
 <fieldset>

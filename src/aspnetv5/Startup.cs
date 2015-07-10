@@ -22,6 +22,7 @@ using Microsoft.Framework.Logging.Console;
 using Microsoft.Framework.Runtime;
 using TagHelperDemo.Models;
 using aspnetv5;
+using aspnetv5.Middleware;
 
 namespace TagHelperDemo
 {
@@ -71,6 +72,7 @@ namespace TagHelperDemo
             NlogConfigurator.Go();
             CommonLoggingConfigurator.Go();
 
+
             // Add the following to the request pipeline only in development environment.
             if (env.IsEnvironment("Development"))
             {
@@ -84,6 +86,7 @@ namespace TagHelperDemo
                 // sends the request to the following path or controller action.
                 app.UseErrorHandler("/Home/Error");
             }
+            app.UseNaiveLogOnErrorMiddleware();
 
             // Add static files to the request pipeline.
             app.UseStaticFiles();
