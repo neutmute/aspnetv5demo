@@ -4,18 +4,28 @@
 @model HomeModel
 @addTagHelper "*, aspnetv5"
 
-We should see cats here:
-<br/>
 
-<thumbnail src="http://lorempixel.com/400/400/cats"
-           caption="A random cat picture"
-           alt="Cats!">
-</thumbnail>
-<hr />
-We should see model fed company details here. Note that the list property type doesn't appear to work. Coloured red in IDE.
-<br />
-<company organisation="Model.Org1" ManyOrganisations="Model.OtherOrgs" ></company>
-<hr/>
-We should see statically set:
-<br />
-<company organisation="Organisation.WellKnownCompany"></company>
+<fieldset>
+    <legend>Metadata</legend>
+
+    Environment: @Model.EnvironmentName
+</fieldset>
+
+<fieldset>
+    <legend>TagHelper Demonstration</legend>
+    We should see cats here:
+    <br />
+
+    <thumbnail src="http://lorempixel.com/400/400/cats"
+               caption="A random cat picture"
+               alt="Cats!">
+    </thumbnail>
+    <hr />
+    We should see model fed company details here. Note that the list property type doesn't appear to work. Coloured red in IDE.
+    <br />
+    <company organisation="Model.Org1" manyorganisations="Model.OtherOrgs"></company>
+    <hr />
+    We should see statically set:
+    <br />
+    <company organisation="Organisation.WellKnownCompany"></company>
+</fieldset>

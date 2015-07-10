@@ -7,6 +7,8 @@ namespace TagHelperDemo.Models
 {
     public class HomeModel
     {
+        public string EnvironmentName { get; set; }
+
         public Organisation Org1{get;set;}
 
 
