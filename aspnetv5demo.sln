@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "aspnetv5", "src\aspnetv5\aspnetv5.xproj", "{37DDD854-14D5-4DB6-BF00-7A30113936E2}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Tests.XUnit", "src\Tests.XUnit\Tests.XUnit.xproj", "{36A8CE66-9B07-413F-B025-DD9C1E91010B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,11 +22,16 @@ Global
 		{37DDD854-14D5-4DB6-BF00-7A30113936E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37DDD854-14D5-4DB6-BF00-7A30113936E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37DDD854-14D5-4DB6-BF00-7A30113936E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36A8CE66-9B07-413F-B025-DD9C1E91010B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A8CE66-9B07-413F-B025-DD9C1E91010B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A8CE66-9B07-413F-B025-DD9C1E91010B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A8CE66-9B07-413F-B025-DD9C1E91010B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{37DDD854-14D5-4DB6-BF00-7A30113936E2} = {BA7CDB26-BCB3-47A1-87DA-356CD1A5E957}
+		{36A8CE66-9B07-413F-B025-DD9C1E91010B} = {BA7CDB26-BCB3-47A1-87DA-356CD1A5E957}
 	EndGlobalSection
 EndGlobal
