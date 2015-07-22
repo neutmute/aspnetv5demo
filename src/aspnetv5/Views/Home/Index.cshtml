@@ -1,7 +1,9 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-@model HomeModel
+@using System.Threading.Tasks
+@using TagHelperDemo.Models
+@model TagHelperDemo.Models.HomeModel
 @addTagHelper "*, aspnetv5"
 
 
@@ -32,4 +34,8 @@
     We should see statically set:
     <br />
     <company organisation="Organisation.WellKnownCompany"></company>
+    <hr/>
+    This TagHelper wraps its content
+    <widget-box title="My Title">Yay for content!</widget-box>
+
 </fieldset>

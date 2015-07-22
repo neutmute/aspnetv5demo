@@ -19,12 +19,12 @@ namespace TagHelperDemo.TagHelpers
             output.Attributes["class"] = "thumbnail";
             var sb = new StringBuilder();
             sb.AppendFormat("<img src=\"{0}\"", context.AllAttributes["src"].ToString());
-            if (context.AllAttributes.ContainsKey("alt"))
+            if (context.AllAttributes.ContainsName("alt"))
             {
                 sb.AppendFormat(" alt=\"{0}\"", context.AllAttributes["alt"]);
             }
             sb.Append("/>");
-            if (context.AllAttributes.ContainsKey("caption"))
+            if (context.AllAttributes.ContainsName("caption"))
             {
                 sb.AppendFormat("<div class=\"caption\"><h3>{0}</h3></div>", context.AllAttributes["caption"]);
             }
