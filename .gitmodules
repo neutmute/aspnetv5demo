@@ -1,0 +1,3 @@
+[submodule "lib/steelcap"]
+	path = lib/steelcap
+	url = git@github.com:neutmute/steelcap.git
