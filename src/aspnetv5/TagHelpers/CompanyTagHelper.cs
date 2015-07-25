@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TagHelperDemo.Models;
+using AspNetDemo.Models;
 
-namespace TagHelperDemo.TagHelpers
+namespace AspNetDemo.TagHelpers
 {
     /// <summary>
     /// http://www.mikesdotnetting.com/article/275/custom-taghelpers-in-asp-net-mvc-6

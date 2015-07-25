@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TagHelperDemo.TagHelpers
+namespace AspNetDemo.TagHelpers
 {
     /// <summary>
     /// http://www.codeproject.com/Articles/986917/Introducing-TagHelpers-with-ASP-NET-on-EverLeap

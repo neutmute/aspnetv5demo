@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TagHelperDemo.Models
+namespace AspNetDemo.Models
 {
     public class HomeModel
     {

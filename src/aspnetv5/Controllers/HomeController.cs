@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetDemo.Models;
 using Microsoft.AspNet.Mvc;
 using NLog;
-using TagHelperDemo.Models;
 using Common.Logging;
 using Microsoft.AspNet.Hosting;
 
-namespace TagHelperDemo.Controllers
+namespace AspNetDemo.Controllers
 {
     public class HomeController : Controller
     {
