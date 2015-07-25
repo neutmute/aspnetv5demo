@@ -18,7 +18,7 @@ namespace TagHelperDemo.TagHelpers
             output.TagName = "div";
             output.Attributes["class"] = "thumbnail";
             var sb = new StringBuilder();
-            sb.AppendFormat("<img src=\"{0}\"", context.AllAttributes["src"].ToString());
+            sb.AppendFormat("<img src=\"{0}\"", context.AllAttributes["src"].Value);
             if (context.AllAttributes.ContainsName("alt"))
             {
                 sb.AppendFormat(" alt=\"{0}\"", context.AllAttributes["alt"]);
@@ -26,7 +26,7 @@ namespace TagHelperDemo.TagHelpers
             sb.Append("/>");
             if (context.AllAttributes.ContainsName("caption"))
             {
-                sb.AppendFormat("<div class=\"caption\"><h3>{0}</h3></div>", context.AllAttributes["caption"]);
+                sb.AppendFormat("<div class=\"caption\"><h3>{0}</h3></div>", context.AllAttributes["caption"].Value);
             }
             output.Content.SetContent(sb.ToString());
 

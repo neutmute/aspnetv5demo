@@ -6,19 +6,27 @@
 @model TagHelperDemo.Models.HomeModel
 @addTagHelper "*, aspnetv5"
 
-
-<fieldset>
-    <legend>Diagnostics</legend>
-
+<h1>Diagnostics</h1>
     Environment: @Model.EnvironmentName
     <br/>
-    Exception Handling: @Html.ActionLink("Throw an exception", "ThrowException")
+    Exception Handling: @Html.ActionLink("Throw an exception", "ThrowException",null,null, new {@class = "btn btn-primary" })
     <br />
-    Logs: See desktop
-</fieldset>
+    Logs: See file on your desktop
 
-<fieldset>
-    <legend>TagHelper Demonstration</legend>
+<h1>Tag Helpers from External Assembly</h1>
+<form>
+    <sc-form-group label-text="Name">
+        <sc-textbox></sc-textbox>
+    </sc-form-group>
+    <sc-form-group label-text="Number">
+        <sc-numberbox></sc-numberbox>
+    </sc-form-group>
+
+    <sc-widget-box title="My Title">Yay for content!</sc-widget-box>
+</form>
+
+
+<h1>Tag Helpers from this Assembly</h1>
     We should see cats here:
     <br />
 
@@ -35,7 +43,3 @@
     <br />
     <company organisation="Organisation.WellKnownCompany"></company>
     <hr/>
-    This TagHelper wraps its content
-    <widget-box title="My Title">Yay for content!</widget-box>
-
-</fieldset>

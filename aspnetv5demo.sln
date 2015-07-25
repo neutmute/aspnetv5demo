@@ -1,16 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BA7CDB26-BCB3-47A1-87DA-356CD1A5E957}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
+		readme.md = readme.md
 	EndProjectSection
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "aspnetv5", "src\aspnetv5\aspnetv5.xproj", "{37DDD854-14D5-4DB6-BF00-7A30113936E2}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Tests.XUnit", "src\Tests.XUnit\Tests.XUnit.xproj", "{36A8CE66-9B07-413F-B025-DD9C1E91010B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{429EACF3-8E0E-44D8-9C12-5AA8A531826E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0EEE9199-68EE-4EF1-BB20-509D25FF9605}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SteelCap", "lib\steelcap\src\SteelCap\SteelCap.xproj", "{1CA850CE-193C-408B-A8E8-B55A91289980}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,12 +33,16 @@ Global
 		{36A8CE66-9B07-413F-B025-DD9C1E91010B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36A8CE66-9B07-413F-B025-DD9C1E91010B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36A8CE66-9B07-413F-B025-DD9C1E91010B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CA850CE-193C-408B-A8E8-B55A91289980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA850CE-193C-408B-A8E8-B55A91289980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA850CE-193C-408B-A8E8-B55A91289980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA850CE-193C-408B-A8E8-B55A91289980}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{37DDD854-14D5-4DB6-BF00-7A30113936E2} = {BA7CDB26-BCB3-47A1-87DA-356CD1A5E957}
-		{36A8CE66-9B07-413F-B025-DD9C1E91010B} = {BA7CDB26-BCB3-47A1-87DA-356CD1A5E957}
+		{36A8CE66-9B07-413F-B025-DD9C1E91010B} = {0EEE9199-68EE-4EF1-BB20-509D25FF9605}
+		{1CA850CE-193C-408B-A8E8-B55A91289980} = {429EACF3-8E0E-44D8-9C12-5AA8A531826E}
 	EndGlobalSection
 EndGlobal

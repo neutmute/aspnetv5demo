@@ -26,7 +26,8 @@
         "Microsoft.Framework.Logging": "1.0.0-beta5",
         "Microsoft.Framework.Logging.Console": "1.0.0-beta5",
         "NLog": "4.0.1",
-        "Common.Logging.NLog40": "3.2.0"
+        "Common.Logging.NLog40": "3.2.0",
+        "SteelCap": "1.0.0-*"
     },
 
     "commands": {
