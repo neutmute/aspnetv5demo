@@ -1,10 +1,5 @@
 {
   "AppSettings": {
     "SiteTitle": "ASP.NET v5 Demo"
-  },
-  "Data": {
-    "DefaultConnection": {
-      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-TagHelperDemo-2b300194-1f1c-4c5f-b0a4-d63494a3e45e;Trusted_Connection=True;MultipleActiveResultSets=true"
-    }
   }
 }
