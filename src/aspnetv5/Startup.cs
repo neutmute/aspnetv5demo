@@ -65,7 +65,7 @@ namespace AspNetDemo
             // Add the following to the request pipeline only in development environment.
             if (env.IsEnvironment("Development"))
             {
-                app.UseErrorPage(ErrorPageOptions.ShowAll);
+                app.UseErrorPage();
                 app.UseDatabaseErrorPage(DatabaseErrorPageOptions.ShowAll);
             }
             else
