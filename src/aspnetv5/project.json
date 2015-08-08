@@ -1,7 +1,8 @@
 ﻿{
     "webroot": "wwwroot",
     "version": "1.0.0-*",
-
+    "description": "demo of asp.net 5",
+    
     "dependencies": {
         "Microsoft.AspNet.Mvc": "6.0.0-beta6",
         "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta6",
