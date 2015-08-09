@@ -48,8 +48,6 @@
     ],
     "scripts": {
         "postrestore": [ "npm install", "bower install" ],
-        "prerestore": [
-            "grunt preBuild"
-        ]
+        "prerestore": [       ]
     }
 }
