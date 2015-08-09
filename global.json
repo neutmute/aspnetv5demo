@@ -1,5 +1,5 @@
 ﻿{
-    "projects": [ "src", "test", "lib\\steelcap\\src\\steelcap"],
+    "projects": [ "src", "test", "lib\\steelcap\\src\\SteelCap"],
     "sdk": {
         "version": "1.0.0-beta6"
     }

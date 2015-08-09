@@ -21,7 +21,7 @@
         "Microsoft.Framework.Logging.Console": "1.0.0-beta6",
         "NLog": "4.0.1",
         "Common.Logging.NLog40": "3.2.0",
-        "steelcap": "1.0.0"
+        "SteelCap": "1.0.0"
     },
 
     "commands": {
@@ -48,6 +48,6 @@
     ],
     "scripts": {
         "postrestore": [ "npm install", "bower install" ],
-        "prerestore": [       ]
+        "prerestore": []
     }
 }
