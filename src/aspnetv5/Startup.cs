@@ -84,8 +84,10 @@ namespace AspNetDemo
                     template: "{controller}/{action}/{id?}",
                     defaults: new { controller = "Home", action = "Index" });
 
-                // Uncomment the following line to add a route for porting Web API 2 controllers.
-                // routes.MapWebApiRoute("DefaultApi", "api/{controller}/{id?}");
+                routes.MapRoute(
+                   name: "foo",
+                   template: "typescriptDemo/{*.}",
+                   defaults: new { controller = "typescriptDemo", action = "Demo" });
             });
         }
     }

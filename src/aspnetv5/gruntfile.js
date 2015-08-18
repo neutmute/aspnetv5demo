@@ -49,11 +49,9 @@ module.exports = function (grunt) {
             },
             steelcapPack: {
                 command: 'echo "dnu pack ./../../lib/steelcap/src/steelcap"'
-            },
-            steelcapPackagelocal: {
-                command: 'xcopy /y ./../../lib/steelcap/src/steelcap/bin/debug/*.nupkg ./../../packages-local'
             }
         },
+
         copy: {
             steelcapbins: {
                     cwd: './../../lib/steelcap/src/steelcap/bin/debug',
@@ -75,11 +73,9 @@ module.exports = function (grunt) {
                 flatten: false
             }
         }
-
-
     });
 
     grunt.registerTask('preBuild', []);
     grunt.registerTask('postBuild', ['copy:steelcapbins']);
-    grunt.registerTask('projectOpen', ['tsd', 'watch']);
+    grunt.registerTask('projectOpen', ['tsd', 'typescript', 'watch']);
 };

@@ -1,19 +1,12 @@
-# Experiments in ASP.NET v5 (vNext) #
+# Experiments in ASP.NET 5 vNext #
 
-A lean web project that demonstrates:
+A lean ASP.NET 5 web project that demonstrates:
 
-- TagHelpers from external and internal assemblies
-- NLog configured via code (haven't got nlog.config conventional location working yet)
-- Common.Logging
+- MV6 `Tag Helper` from external and internal assemblies
+- `NLog` configured via code
+- `Common.Logging` bindings
+- `TypeScript` residing in `wwwroot` with a `grunt-watch` task keeping it hot
+- `Bower` components deployed to and consumed from `wwwroot`
 
 ## Build
-Having problems with project reference, need to have check out folder as
-`C:\CodeOther\aspnetv5demo` due to nuget not restoring from relative paths
-
-so build steelcap: 
-
-* `$lib\steelcap\dnu restore `
-* `$lib\steelcap\dnu build   `
-* `$lib\steelcap\dnu pack    `
-
-then compile and run `aspnetv5demo`
+Building the `aspnetv5demo` project should automatically copy the submodule `SteelCap` binaries to the web project's `bin` folder.
