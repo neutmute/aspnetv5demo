@@ -191,3 +191,7 @@ src/Tests.XUnit/project.lock.json
 src/aspnetv5/project.lock.json
 *.nupkg
 .vs/
+src/aspnetv5/wwwroot/assets/
+src/aspnetv5/wwwroot/typescript/typings/
+src/aspnetv5/wwwroot/typescript/*/*.js
+src/aspnetv5/wwwroot/_references.js

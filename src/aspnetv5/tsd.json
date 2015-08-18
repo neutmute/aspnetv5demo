@@ -2,20 +2,32 @@
   "version": "v4",
   "repo": "borisyankov/DefinitelyTyped",
   "ref": "master",
-  "path": "Typescript/typings",
-  "bundle": "typings/tsd.d.ts",
+  "path": "wwwroot/typescript/typings",
+  "bundle": "wwwroot/typescript/typings/tsd.d.ts",
   "installed": {
     "angularjs/angular.d.ts": {
-      "commit": "977da240f263e88215a27cb44f2e31524ca07135"
+      "commit": "4df20c9706ce6ca27137617770b57f3a0d3f9689"
     },
     "jquery/jquery.d.ts": {
-      "commit": "977da240f263e88215a27cb44f2e31524ca07135"
+      "commit": "4df20c9706ce6ca27137617770b57f3a0d3f9689"
     },
     "angular-ui-bootstrap/angular-ui-bootstrap.d.ts": {
-      "commit": "977da240f263e88215a27cb44f2e31524ca07135"
+      "commit": "4df20c9706ce6ca27137617770b57f3a0d3f9689"
     },
     "angular-wizard/angular-wizard.d.ts": {
-      "commit": "977da240f263e88215a27cb44f2e31524ca07135"
+      "commit": "4df20c9706ce6ca27137617770b57f3a0d3f9689"
+    },
+    "toastr/toastr.d.ts": {
+      "commit": "4df20c9706ce6ca27137617770b57f3a0d3f9689"
+    },
+    "angularjs/angular-resource.d.ts": {
+      "commit": "4df20c9706ce6ca27137617770b57f3a0d3f9689"
+    },
+    "jquery.dataTables/jquery.dataTables.d.ts": {
+      "commit": "3b0f362204ea965952dafdb682a5274d527ef9d0"
+    },
+    "angularjs/angular-route.d.ts": {
+      "commit": "5109e1269d6ab8e8e73b1a5e85d8ceb836d3099f"
     }
   }
 }

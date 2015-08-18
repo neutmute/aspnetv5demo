@@ -12,5 +12,15 @@ namespace aspnetv5.Controllers
         {
             return View();
         }
+
+        public IActionResult MainPage()
+        {
+            return View();
+        }
+
+        public IActionResult SecondPage()
+        {
+            return View();
+        }
     }
 }
