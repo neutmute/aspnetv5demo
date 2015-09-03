@@ -1,13 +1,17 @@
 ﻿angular
     .module('tsDemo.OldSchool', [])
-    .controller('SpicyControllerJs', ['$scope', function ($scope) {
-    $scope.spice = 'very';
+    .controller('spicyControllerJs', [
+        '$scope', function($scope) {
 
-    $scope.chiliSpicy = function () {
-        $scope.spice = 'chili';
-    };
+            var vm = this;
+            vm.spice = 'very';
 
-    $scope.jalapenoSpicy = function () {
-        $scope.spice = 'jalapeño';
-    };
-}])
+            vm.chiliSpicy = function() {
+                vm.spice = 'chili';
+            };
+
+            vm.jalapenoSpicy = function() {
+                vm.spice = 'jalapeño';
+            };
+        }
+    ]);

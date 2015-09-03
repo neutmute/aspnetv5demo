@@ -5,14 +5,18 @@
         chiliSpicy(): void;
         jalapenoSpicy(): void;
     }
-
+     
     export interface ISpicyControllerTsScope extends ng.IScope {
-        vm: SpicyControllerTs;
+        vm: ISpicyControllerTs;
     }
 
     export class SpicyControllerTs implements ISpicyControllerTs {
         
         spice: string;
+
+        constructor() {
+            this.spice = 'very';
+        }
 
         chiliSpicy(){
             this.spice = 'chili';
