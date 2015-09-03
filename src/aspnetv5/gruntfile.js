@@ -47,6 +47,7 @@ module.exports = function (grunt) {
             options: {
                 stderr: false
             },
+
             steelcapPack: {
                 command: 'echo "dnu pack ./../../lib/steelcap/src/steelcap"'
             }
@@ -66,6 +67,7 @@ module.exports = function (grunt) {
                 expand: true,
                 flatten: false
             },
+
             bowerAngular: {
                 src: 'bower_components/angular*/angular*.js',
                 dest: 'wwwroot/assets/',
