@@ -85,9 +85,9 @@ namespace AspNetDemo
                     defaults: new { controller = "Home", action = "Index" });
 
                 routes.MapRoute(
-                   name: "foo",
-                   template: "typescriptDemo/{*.}",
-                   defaults: new { controller = "typescriptDemo", action = "Demo" });
+                   name: "typeScriptDemo",
+                   template: "ts/{*.}",
+                   defaults: new { controller = "typescriptDemo", action = "Index" });
             });
         }
     }

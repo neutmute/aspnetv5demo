@@ -6,12 +6,12 @@
         '$routeProvider',
         ($routeProvider: ng.route.IRouteProvider) => {
             $routeProvider
-                .when('/mainPage', {
-                    templateUrl: 'TypescriptDemo/MainPage',
+                .when('/ts/page1', {
+                templateUrl: 'TypescriptDemo/Page1Partial',
                     controller: 'mainPageController'
                 })
-                .when('/secondPage', {
-                templateUrl: 'TypescriptDemo/secondPage',
+                .when('/ts/page2', {
+                templateUrl: 'TypescriptDemo/Page2Partial',
                     controller: 'secondPageController'
                 })
                 .otherwise({
