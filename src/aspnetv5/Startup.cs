@@ -16,10 +16,10 @@ using Microsoft.Framework.Configuration;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
 using Microsoft.Framework.Logging.Console;
-using Microsoft.Framework.Runtime;
 using AspNetDemo.Models;
 using aspnetv5;
 using aspnetv5.Middleware;
+using Microsoft.Dnx.Runtime;
 
 namespace AspNetDemo
 {
@@ -41,7 +41,7 @@ namespace AspNetDemo
         public void ConfigureServices(IServiceCollection services)
         {
             // Add Application settings to the services container.
-            services.Configure<AppSettings>(Configuration.GetConfigurationSection("AppSettings"));
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
             
             // Add MVC services to the services container.
             services.AddMvc();

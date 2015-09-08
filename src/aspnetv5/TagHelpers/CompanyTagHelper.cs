@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AspNetDemo.Models;
+using SteelCap.Extensions;
 
 namespace AspNetDemo.TagHelpers
 {
@@ -22,34 +23,46 @@ namespace AspNetDemo.TagHelpers
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
-            var br = new TagBuilder("br").ToString(TagRenderMode.SelfClosing);
+            var br = new TagBuilder("br");
+            br.TagRenderMode = TagRenderMode.SelfClosing;
+            
             output.TagName = "div";
             output.Attributes.Add("itemscope", null);
             output.Attributes.Add("itemtype", "http://schema.org/Organization");
+
             var name = new TagBuilder("span");
             name.MergeAttribute("itemprop", "name");
             name.SetInnerText(Organisation.Name);
+
             var address = new TagBuilder("address");
             address.MergeAttribute("itemprop", "address");
             address.MergeAttribute("itemscope", null);
             address.MergeAttribute("itemtype", "http://schema.org/PostalAddress");
+
             var span = new TagBuilder("span");
             span.MergeAttribute("itemprop", "streetAddress");
             span.SetInnerText(Organisation.StreetAddress);
-            address.InnerHtml = span.ToString() + br;
+            address.InnerHtml = span.ConcatToHtmlContent(br);
+
             span = new TagBuilder("span");
             span.MergeAttribute("itemprop", "addressLocality");
             span.SetInnerText(Organisation.AddressLocality);
-            address.InnerHtml += span.ToString() + br;
+
+            address.InnerHtml = address.InnerHtml.ConcatToHtmlContent(span, br);
             span = new TagBuilder("span");
             span.MergeAttribute("itemprop", "addressRegion");
             span.SetInnerText(Organisation.AddressRegion);
-            address.InnerHtml += span.ToString();
+
+            address.InnerHtml = address.InnerHtml.ConcatToHtmlContent(span);
             span = new TagBuilder("span");
             span.MergeAttribute("itemprop", "postalCode");
             span.SetInnerText($" {Organisation.PostalCode}");
-            address.InnerHtml += span.ToString();
-            output.Content.SetContent(name.ToString() + address.ToString());
+
+            address.InnerHtml = address.InnerHtml.ConcatToHtmlContent(span);
+
+            var finalHtml = name.ConcatToString(address);
+
+            output.Content.SetContent(finalHtml);
         }
     }
 }
