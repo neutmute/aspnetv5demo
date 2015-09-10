@@ -78,6 +78,6 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('preBuild', []);
-    grunt.registerTask('postBuild', ['copy:steelcapbins']);
+    grunt.registerTask('postBuild', ['copy']);
     grunt.registerTask('projectOpen', ['tsd', 'typescript', 'watch']);
 };
