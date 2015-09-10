@@ -1,0 +1,20 @@
+﻿@{
+    Layout = null;
+}
+
+<h1>Page 3 Controller</h1>
+
+<sc-form-group label-text="First name">
+    <sc-textbox ng-model="vm.person.firstName"></sc-textbox>
+</sc-form-group>
+
+<sc-form-group label-text="Last Name">
+    <sc-textbox ng-model="vm.person.lastName"></sc-textbox>
+</sc-form-group>
+
+<sc-form-group label-text="Email">
+    <sc-textbox ng-model="vm.person.email"></sc-textbox>
+</sc-form-group>
+
+
+<button ng-click="vm.sayHello()">Set Person</button>

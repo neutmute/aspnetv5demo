@@ -22,5 +22,9 @@ namespace aspnetv5.Controllers
         {
             return View();
         }
+        public IActionResult Page3Partial()
+        {
+            return View();
+        }
     }
 }

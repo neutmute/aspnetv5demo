@@ -15,7 +15,16 @@ Intellisense
 - Modularisation with namespaces
 - Sourcemap debug
 
+JS version
 
+     vm.addNumbers = function (operand1, operand2) {
+                alert(operand1 + operand2);
+            };
+
+
+	vm.addNumbers(12, 4);
+
+TS version
 
         addNumbers(operand1, operand2) {
             alert(operand1 + operand2);
@@ -25,3 +34,5 @@ Intellisense
             alert(operand1 + operand2);
         }
 
+
+CM2.0
