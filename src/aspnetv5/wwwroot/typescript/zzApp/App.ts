@@ -1,6 +1,5 @@
 ﻿angular
     .module('typeScriptDemo', ["ngRoute", "tsDemo.OldSchool"])
-   // .controller("mainPageController", ["$scope", TypeScriptDemoApp.Controllers.MainPageController])
     .controller("spicyControllerTs", ["$scope", TypeScriptDemoApp.Controllers.SpicyControllerTs])
     .controller("page3Controller", ["$scope", TypeScriptDemoApp.Controllers.Page3Controller])
     

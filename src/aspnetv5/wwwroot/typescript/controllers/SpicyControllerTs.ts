@@ -1,16 +1,9 @@
 ﻿module TypeScriptDemoApp.Controllers {
-
-    export interface ISpicyControllerTs {
-        spice: string;
-        chiliSpicy(): void;
-        jalapenoSpicy(): void;
-    }
-     
-    export class SpicyControllerTs implements ISpicyControllerTs {
+    
+    export class SpicyControllerTs  {
         
         spice: string;
         
-
         constructor() {
             this.spice = 'very';
         }

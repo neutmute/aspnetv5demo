@@ -10,7 +10,7 @@
 
         constructor(){
             console.log("Page3Controller constructed");
-
+            
             this.person = <Models.IPerson>{firstName:"foo"};
         }
 
@@ -20,12 +20,3 @@
     }
 }
 
-
-
-
-/*
-new Models.Knight();
-
-
-alert("Hello " + this.person.getTitle() + " " + this.person.firstName);
-*/

@@ -13,23 +13,4 @@
         email: string;
         address: IAddress;
     }
-
-    //export class Person implements IPerson {
-
-    //    firstName: string;
-    //    lastName: string;
-    //    email: string;
-    //    address: IAddress;
-
-    //    getTitle(): string {
-    //        return "Mr";
-    //    }
-    //}
-
-    //export class Knight extends Person{
-    //    getTitle(): string {
-    //        return "Sir";
-    //    }
-    //}
-
 }
