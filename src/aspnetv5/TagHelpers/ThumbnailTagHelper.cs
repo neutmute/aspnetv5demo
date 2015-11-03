@@ -28,7 +28,7 @@ namespace AspNetDemo.TagHelpers
             {
                 sb.AppendFormat("<div class=\"caption\"><h3>{0}</h3></div>", context.AllAttributes["caption"].Value);
             }
-            output.Content.SetContent(sb.ToString());
+            output.Content.Clear().AppendEncoded(sb.ToString());
 
             base.Process(context, output);
         }

@@ -3,6 +3,7 @@ using Microsoft.AspNet.Razor.Runtime.TagHelpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 using AspNetDemo.Models;
 using SteelCap.Extensions;
@@ -32,7 +33,7 @@ namespace AspNetDemo.TagHelpers
 
             var name = new TagBuilder("span");
             name.MergeAttribute("itemprop", "name");
-            name.SetInnerText(Organisation.Name);
+            name.InnerHtml.Append(Organisation.Name);
 
             var address = new TagBuilder("address");
             address.MergeAttribute("itemprop", "address");
@@ -41,28 +42,30 @@ namespace AspNetDemo.TagHelpers
 
             var span = new TagBuilder("span");
             span.MergeAttribute("itemprop", "streetAddress");
-            span.SetInnerText(Organisation.StreetAddress);
-            address.InnerHtml = span.ConcatToHtmlContent(br);
+            span.InnerHtml.Append(Organisation.StreetAddress);
+            address.InnerHtml.Append(span.ConcatToHtmlContent(br));
 
             span = new TagBuilder("span");
             span.MergeAttribute("itemprop", "addressLocality");
-            span.SetInnerText(Organisation.AddressLocality);
+            span.InnerHtml.Append(Organisation.AddressLocality);
 
-            address.InnerHtml = address.InnerHtml.ConcatToHtmlContent(span, br);
+            address.InnerHtml.Append(span);
+            address.InnerHtml.Append(br);
+
             span = new TagBuilder("span");
             span.MergeAttribute("itemprop", "addressRegion");
-            span.SetInnerText(Organisation.AddressRegion);
+            span.InnerHtml.Append(Organisation.AddressRegion);
 
-            address.InnerHtml = address.InnerHtml.ConcatToHtmlContent(span);
+            address.InnerHtml.Append(span);
+
             span = new TagBuilder("span");
             span.MergeAttribute("itemprop", "postalCode");
-            span.SetInnerText($" {Organisation.PostalCode}");
+            span.InnerHtml.Append(Organisation.PostalCode);
 
-            address.InnerHtml = address.InnerHtml.ConcatToHtmlContent(span);
-
-            var finalHtml = name.ConcatToString(address);
-
-            output.Content.SetContent(finalHtml);
+            address.InnerHtml.Append(span);
+            
+            output.Content.Clear();
+            output.Content.Append(address);
         }
     }
 }
