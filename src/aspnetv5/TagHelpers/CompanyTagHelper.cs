@@ -43,7 +43,7 @@ namespace AspNetDemo.TagHelpers
             var span = new TagBuilder("span");
             span.MergeAttribute("itemprop", "streetAddress");
             span.InnerHtml.Append(Organisation.StreetAddress);
-            address.InnerHtml.Append(span.ConcatToHtmlContent(br));
+            address.InnerHtml.Append(br);
 
             span = new TagBuilder("span");
             span.MergeAttribute("itemprop", "addressLocality");
