@@ -10,7 +10,7 @@ namespace AspNetDemo.TagHelpers
     /// <summary>
     /// http://www.codeproject.com/Articles/986917/Introducing-TagHelpers-with-ASP-NET-on-EverLeap
     /// </summary>
-    [TargetElement("thumbnail", Attributes = "src")]
+   [HtmlTargetElement("thumbnail", Attributes = "src")]
     public class ThumbnailTagHelper : TagHelper
     {
         public override void Process(TagHelperContext context, TagHelperOutput output)

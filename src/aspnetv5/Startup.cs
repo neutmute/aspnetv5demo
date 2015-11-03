@@ -28,9 +28,10 @@ namespace AspNetDemo
         public Startup(IHostingEnvironment env, IApplicationEnvironment appEnv)
         {
             // Setup configuration sources.
-            var configBuilder = new ConfigurationBuilder(appEnv.ApplicationBasePath)
-            .AddJsonFile("config.json")
-            .AddEnvironmentVariables();
+            var configBuilder = new ConfigurationBuilder()
+                .SetBasePath(appEnv.ApplicationBasePath)
+                .AddJsonFile("config.json")
+                .AddEnvironmentVariables();
 
             Configuration = configBuilder.Build();
         }
@@ -61,14 +62,14 @@ namespace AspNetDemo
             // Add the following to the request pipeline only in development environment.
             if (env.IsEnvironment("Development"))
             {
-                app.UseErrorPage();
+                app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage(DatabaseErrorPageOptions.ShowAll);
             }
             else
             {
                 // Add Error handling middleware which catches all application specific errors and
                 // sends the request to the following path or controller action.
-                app.UseErrorHandler("/Home/Error");
+                app.UseExceptionHandler("/Home/Error");
             }
 
             app.UseNaiveLogOnErrorMiddleware();
