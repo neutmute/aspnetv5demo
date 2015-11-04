@@ -72,6 +72,8 @@ namespace AspNetDemo
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            app.UseIISPlatformHandler();
+
             app.UseNaiveLogOnErrorMiddleware();
 
             // Add static files to the request pipeline.
