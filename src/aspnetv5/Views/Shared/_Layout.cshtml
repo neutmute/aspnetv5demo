@@ -1,6 +1,6 @@
 ﻿@using System.Threading.Tasks
 @using AspNetDemo
-@using Microsoft.Framework.OptionsModel
+@using Microsoft.Extensions.OptionsModel
 @inject IOptions<AppSettings> AppSettings
 <!DOCTYPE html>
 <html>
@@ -29,7 +29,7 @@
     <![endif]-->
 </head>
 <body>
-<div class="container body-content" ng-app="typeScriptDemo" ng-cloak>
+<div class="container body-content" ng-app="typeScriptDemo">
     @RenderBody()
     <hr/>
     <footer>
