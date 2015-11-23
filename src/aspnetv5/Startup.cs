@@ -12,14 +12,15 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Routing;
 using Microsoft.Data.Entity;
-using Microsoft.Framework.Configuration;
-using Microsoft.Framework.DependencyInjection;
-using Microsoft.Framework.Logging;
-using Microsoft.Framework.Logging.Console;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 using AspNetDemo.Models;
 using aspnetv5;
 using aspnetv5.Middleware;
 using Microsoft.Dnx.Runtime;
+using Microsoft.Extensions.PlatformAbstractions;
 
 namespace AspNetDemo
 {
@@ -63,7 +64,7 @@ namespace AspNetDemo
             if (env.IsEnvironment("Development"))
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage(DatabaseErrorPageOptions.ShowAll);
+                app.UseDatabaseErrorPage(options => options.EnableAll());
             }
             else
             {
@@ -93,5 +94,7 @@ namespace AspNetDemo
                    defaults: new { controller = "typescriptDemo", action = "Index" });
             });
         }
+
+        public static void Main(string[] args) => WebApplication.Run<Startup>(args);
     }
 }
