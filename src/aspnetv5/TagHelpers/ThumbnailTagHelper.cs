@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNet.Razor.TagHelpers;
 
 namespace AspNetDemo.TagHelpers
 {
@@ -28,7 +29,7 @@ namespace AspNetDemo.TagHelpers
             {
                 sb.AppendFormat("<div class=\"caption\"><h3>{0}</h3></div>", context.AllAttributes["caption"].Value);
             }
-            output.Content.Clear().AppendEncoded(sb.ToString());
+            output.Content.Clear().AppendHtml(sb.ToString());
 
             base.Process(context, output);
         }

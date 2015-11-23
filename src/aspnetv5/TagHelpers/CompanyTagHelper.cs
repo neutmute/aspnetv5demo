@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 using AspNetDemo.Models;
+using Microsoft.AspNet.Razor.TagHelpers;
 using SteelCap.Extensions;
 
 namespace AspNetDemo.TagHelpers
